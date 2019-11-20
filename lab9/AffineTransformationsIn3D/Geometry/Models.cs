@@ -137,6 +137,7 @@ namespace AffineTransformationsIn3D.Geometry
         public static Mesh Icosahedron(double size)
         {
             var vertices = new Vector[12];
+            var normals = new Vector[12];
             var indices = new int[20][];
             double R = (size * Math.Sqrt(2.0 * (5.0 + Math.Sqrt(5.0)))) / 4;
             double r = (size * Math.Sqrt(3.0) * (3.0 + Math.Sqrt(5.0))) / 12;
@@ -162,7 +163,9 @@ namespace AffineTransformationsIn3D.Geometry
                 indices[10 + 2 * i] = new int[3] { 10, 2 * i, (2 * (i + 1)) % 10 };
                 indices[10 + 2 * i + 1] = new int[3] { 11, (2 * (i + 1) + 1) % 10, 2 * i + 1 };
             }
-            return new Mesh(vertices, indices);
+            for (int i = 0; i < 12; i++)
+                normals[i] = vertices[i].Normalize();
+            return new MeshWithNormals(vertices, normals, indices);
         }
 
         public static Mesh Tetrahedron(double size)
