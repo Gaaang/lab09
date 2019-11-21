@@ -18,9 +18,6 @@ namespace AffineTransformationsIn3D.Geometry
             for (int i = 0; i < Coordinates.Length; ++i)
             {
                 Coordinates[i] *= transformation;
-                // В следующей строке, вероятно, не должно быть вызова Normalize,
-                // но без него ничего не работает. Возможно, normalTransformation
-                // вычисляется неверно.
                 Normals[i] = (Normals[i] * normalTransformation).Normalize();
             }
         }

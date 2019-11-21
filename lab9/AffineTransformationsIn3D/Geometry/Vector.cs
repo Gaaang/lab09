@@ -70,6 +70,9 @@ namespace AffineTransformationsIn3D.Geometry
             return -1 * v;
         }
 
+        /*
+         Нормали в вершинах вычисляются усреднением нормалей смежных граней
+          */
         public Vector Normalize()
         {
             var length = Modul() * W;
@@ -163,9 +166,7 @@ namespace AffineTransformationsIn3D.Geometry
 
         public static double Dist(Vector u, Vector v)
         {
-            return Math.Sqrt((u.X - v.X) * (u.X - v.X) +
-                             (u.Y - v.Y) * (u.Y - v.Y) +
-                             (u.Z - v.Z) * (u.Z - v.Z));
+            return Math.Sqrt((u.X - v.X) * (u.X - v.X) + (u.Y - v.Y) * (u.Y - v.Y) + (u.Z - v.Z) * (u.Z - v.Z));
         }
 
         public static Vector operator -(Vector u, Vector v)

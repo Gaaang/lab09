@@ -23,7 +23,6 @@ namespace AffineTransformationsIn3D.Geometry
             UVCoordinate = textureCoordinate;
         }
 
-        public Vertex(Vector coordinate, Vector textureCoordinate) : this(coordinate, Color.Black, new Vector(0, 0, 0), textureCoordinate)
-        { }
+        public Vertex(Vector coordinate, Vector textureCoordinate) : this(coordinate, Color.Black, new Vector(0, 0, 0), textureCoordinate){ }
     }
 }
