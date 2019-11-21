@@ -163,6 +163,29 @@ namespace AffineTransformationsIn3D.Geometry
                 indices[10 + 2 * i + 1] = new int[3] { 11, (2 * (i + 1) + 1) % 10, 2 * i + 1 };
             }
             return new Mesh(vertices, indices);
+            /*var facets = new Vector[60];
+            var j = 0;
+            for (int i = 0; i<20; i++)
+            {
+                facets[j] = vertices[indices[i][0]];
+                j++;
+                facets[j] = vertices[indices[i][1]];
+                j++;
+                facets[j] = vertices[indices[i][2]];
+                j++;
+            }
+            var texturecor = new Vector[60];
+            j = 0;
+            for (int i =0; i<20; i++)
+            {
+                texturecor[j] = new Vector(0, 0);
+                j++;
+                texturecor[j] = new Vector(1, 0);
+                j++;
+                texturecor[j] = new Vector(1, 1);
+                j++;
+            }
+            return new MeshWithTexture(Resources.ImageTexture, facets, texturecor, indices);*/
         }
 
         public static Mesh Tetrahedron(double size)
@@ -170,15 +193,45 @@ namespace AffineTransformationsIn3D.Geometry
             var vertices = new Vector[4];
             var indices = new int[4][];
             double h = Math.Sqrt(2.0 / 3.0) * size;
-            vertices[0] = new Vector(-size / 2, 0, h / 3);
+            /*vertices[0] = new Vector(-size / 2, 0, h / 3);
             vertices[1] = new Vector(0, 0, -h * 2 / 3);
             vertices[2] = new Vector(size / 2, 0, h / 3);
-            vertices[3] = new Vector(0, h, 0);
+            vertices[3] = new Vector(0, h, 0);*/
+            var a = new Vector(-size / 2, 0, h / 3);
+            var b = new Vector(0, 0, -h * 2 / 3);
+            var c = new Vector(size / 2, 0, h / 3);
+            var d = new Vector(0, h, 0);
             indices[0] = new int[3] { 0, 2, 1 };
             indices[1] = new int[3] { 1, 3, 0 };
             indices[2] = new int[3] { 0, 3, 2 };
             indices[3] = new int[3] { 2, 3, 1 };
-            return new Mesh(vertices, indices);
+            var facets = new Vector[12]
+            {
+                a,c,b,
+                d,a,b,
+                d,a,c,
+                d,c,b,
+            };
+            var texturecor = new Vector[12]
+             {
+                new Vector(0, 0),
+                new Vector(1, 0),
+                new Vector(1, 1),
+
+                new Vector(0, 1),
+                new Vector(1, 0),
+                new Vector(1, 1),
+
+                new Vector(0, 0),
+                new Vector(1, 0),
+                new Vector(1, 1),
+
+                new Vector(0, 0),
+                new Vector(1, 0),
+                new Vector(1, 1),
+             };
+            return new MeshWithTexture(Resources.ImageTexture, facets, texturecor, indices);
+            //return new Mesh(vertices, indices);
         }
 
         public static Mesh Plot(

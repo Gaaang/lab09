@@ -19,3 +19,14 @@ C:\Users\User\Desktop\Prog\lab8\AffineTransformationsIn3D\obj\Debug\AffineTransf
 C:\Users\User\Desktop\Prog\lab8\AffineTransformationsIn3D\obj\Debug\AffineTransformationsIn3D.csproj.GenerateResource.cache
 C:\Users\User\Desktop\Prog\lab8\AffineTransformationsIn3D\obj\Debug\AffineTransformationsIn3D.exe
 C:\Users\User\Desktop\Prog\lab8\AffineTransformationsIn3D\obj\Debug\AffineTransformationsIn3D.pdb
+C:\Users\andre\Desktop\КГ 4 курс 1 семестр\lab09\lab9\AffineTransformationsIn3D\bin\Debug\AffineTransformationsIn3D.exe.config
+C:\Users\andre\Desktop\КГ 4 курс 1 семестр\lab09\lab9\AffineTransformationsIn3D\bin\Debug\AffineTransformationsIn3D.exe
+C:\Users\andre\Desktop\КГ 4 курс 1 семестр\lab09\lab9\AffineTransformationsIn3D\bin\Debug\AffineTransformationsIn3D.pdb
+C:\Users\andre\Desktop\КГ 4 курс 1 семестр\lab09\lab9\AffineTransformationsIn3D\obj\Debug\AffineTransformationsIn3D.Form1.resources
+C:\Users\andre\Desktop\КГ 4 курс 1 семестр\lab09\lab9\AffineTransformationsIn3D\obj\Debug\AffineTransformationsIn3D.FormChangeModel.resources
+C:\Users\andre\Desktop\КГ 4 курс 1 семестр\lab09\lab9\AffineTransformationsIn3D\obj\Debug\AffineTransformationsIn3D.Properties.Resources.resources
+C:\Users\andre\Desktop\КГ 4 курс 1 семестр\lab09\lab9\AffineTransformationsIn3D\obj\Debug\AffineTransformationsIn3D.csproj.GenerateResource.cache
+C:\Users\andre\Desktop\КГ 4 курс 1 семестр\lab09\lab9\AffineTransformationsIn3D\obj\Debug\AffineTransformationsIn3D.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\КГ 4 курс 1 семестр\lab09\lab9\AffineTransformationsIn3D\obj\Debug\AffineTransformationsIn3D.exe
+C:\Users\andre\Desktop\КГ 4 курс 1 семестр\lab09\lab9\AffineTransformationsIn3D\obj\Debug\AffineTransformationsIn3D.pdb
+C:\Users\andre\Desktop\КГ 4 курс 1 семестр\lab09\lab9\AffineTransformationsIn3D\obj\Debug\AffineTransformationsIn3D.csprojAssemblyReference.cache
